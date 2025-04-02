@@ -1,38 +1,30 @@
 ---
-title: Hello World
+title: 智识精英的十项精进准则
+subtitle: 在认知迭代中实现阶层跃迁
+date: 2023-11-15T09:00:00+08:00
+location: 上海·外滩源壹号
+tags:
+  - 财富管理
+  - 认知升级
+  - 圈层突破
+cover: https://assets.luxe-chronicle.com/article-covers/elite-principles.jpg
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+![认知金字塔](https://assets.luxe-chronicle.com/images/cognition-pyramid.png)
 
-### Create a new post
+> "真正的财富自由是认知体系的自由" —— 维克多·洛朗  
+> CFA持证人 | 洛朗家族办公室首席顾问
 
-``` bash
-$ hexo new "My New Post"
-```
+## 核心原则体系
+1. **反直觉决策模型**  
+   - 运用行为金融学破除禀赋效应
+   - 建立跨期决策的贴现因子模型
+   - 案例：2022年离岸信托架构调整窗口期的把握
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+2. **认知带宽管理**  
+   - 使用「注意力ROI」评估矩阵
+   - 部署智能信息过滤系统（推荐使用[AlphaSense](https://www.alpha-sense.com)）
 
-### Run server
-
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+```bash
+# 认知净化命令行工具
+$ cognition-tool --filter=news --source=bloomberg,wsj --risk-level=high
