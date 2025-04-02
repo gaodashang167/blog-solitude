@@ -25,6 +25,3 @@ cover: https://assets.luxe-chronicle.com/article-covers/elite-principles.jpg
    - 使用「注意力ROI」评估矩阵
    - 部署智能信息过滤系统（推荐使用[AlphaSense](https://www.alpha-sense.com)）
 
-```bash
-# 认知净化命令行工具
-$ cognition-tool --filter=news --source=bloomberg,wsj --risk-level=high
