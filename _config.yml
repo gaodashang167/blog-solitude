@@ -1,110 +1,46 @@
-# _config.yml - Cloudflare Pages高定版
-
-# ---------------------------
-# 核心配置
-# ---------------------------
-title: LUXE CHRONICLE
-subtitle: 智识精英的数字会所
-description: 融合加密金融与高定生活的Web3内容枢纽
-keywords:
-  - 资产代币化
-  - 数字身份
-  - 腕表NFT
-  - 太空经济
-  - 量子金融
-author: Victor Laurent
+# Site
+title: LuxeChronicle  # 英文品牌名提升国际感，中文可译为"奢华纪事"
+subtitle: '精英阶层的数字名片'  # 副标题强调用户定位
+description: '探索财富管理、奢侈科技与精英生活方式的深度博客'  # 更精准的定位描述
+keywords: 
+- 财富自由
+- 高端社交
+- 奢侈科技
+- 私人游艇
+- 腕表收藏  # 高净值人群关注的关键词
+author: Victor Laurent  # 国际化精英风格姓名
 language: zh-CN
-timezone: Asia/Shanghai
-url: https://your-project.pages.dev
-root: /
+timezone: 'Asia/Shanghai'
 
-# ---------------------------
-# 部署配置
-# ---------------------------
-deploy:
-  - type: git
-    repo: https://github.com/yourname/your-repo
-    branch: main
-
-# ---------------------------
-# 云原生优化
-# ---------------------------
-cloudflare:
-  workers: true
-  analytics: true
-  cache_ttl: 14400
-
-# ---------------------------
-# 高定视觉配置
-# ---------------------------
-theme: luxe-pro
-theme_config:
-  # 色彩方案
-  colors:
-    primary: "#1a365d"  # 深海蓝
-    secondary: "#c5a47e"  # 香槟金
-    accent: "#0d1a26"  # 午夜黑
-  
-  # 字体配置
-  fonts:
-    header: "https://fonts.luxe-cdn.com/HelveticaNow.woff2"
-    body: "https://fonts.luxe-cdn.com/Sohne-Book.woff2"
-  
-  # 动效参数
-  effects:
-    parallax_intensity: 0.75
-    hover_shadow: true
-  
-  # VIP入口
-  vip_gateway: 
-    enable: true
-    redirect: /members-only
-
-# ---------------------------
-# 安全增强
-# ---------------------------
-security_headers:
-  X-Frame-Options: DENY
-  X-Content-Type-Options: nosniff
-  Permissions-Policy: "geolocation=(), microphone=()"
-
-# ---------------------------
-# 构建优化
-# ---------------------------
-minify:
-  html:
-    enable: true
-  css:
-    enable: true
-    exclude:
-      - '*.min.css'
-  js:
-    enable: true
-    mangle: true
-
-# ---------------------------
-# 高级路由
-# ---------------------------
-permalink: :year/:title/
+# URL
+url: https://luxe-chronicle.com  # 需替换为真实域名
+permalink: /insights/:title/  # 更简洁优雅的URL结构
 pretty_urls:
-  trailing_index: false
-  trailing_html: false
+  trailing_index: false  # 移除index.html后缀
+  trailing_html: false   # 移除.html后缀
 
-# ---------------------------
-# 会员体系
-# ---------------------------
-membership:
-  tiers:
-    - name: 星耀会员
-      icon: diamond
-      threshold: 1000000
-    - name: 寰宇会籍
-      icon: galaxy
-      threshold: 10000000
+# 新增精英化功能配置
+custom_fields:
+  membership_tier:  # 会员等级体系
+    - Platinum
+    - Diamond 
+    - Concierge
+  private_club: true  # 私密俱乐部功能
 
-# ---------------------------
-# 数据源配置
-# ---------------------------
-external_data:
-  bloomberg_api: https://api.bloomberg.luxe/v3
-  sothebys_feed: https://feed.sothebys.luxe/auctions
+# 国际化配置
+i18n:
+  VIP_contact: "尊享顾问专线：400-900-8888"  # 高端客服信息
+
+# 首页生成器强化
+index_generator:
+  per_page: 12  # 符合高端用户阅读习惯
+  order_by: -updated  # 优先显示最新更新内容
+
+# 分类标签升级
+default_category: elite_lifestyle  # 默认分类改为"精英生活"
+category_map:
+  私人飞行: /aviation  # 高端分类映射
+  游艇鉴赏: /yachting
+
+# 增强元数据
+meta_generator: false  # 隐藏生成器信息提升私密性
